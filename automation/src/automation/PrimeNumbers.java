@@ -13,26 +13,26 @@ public class PrimeNumbers {
 		
 		// To check 0 & 1 are not prime numbers
 		int Num2 = Num/2;
-		if( Num == 0 || Num == 1)
+		int var=0;
+		
+		
+		for(int i=2; i<=Num2;i++ )
 		{
-			System.out.println("Not a Prime Number");
-		}
-		else
-		{
-			
-			for(int i=2; i<Num2;i++)
+			if(Num%i==0)
 			{
-				if(Num%2==0) 
-				{
-					System.out.println("It's an even Number");
-				}
-				else
-				{
-					System.out.println("It's a prime Number");
-				}
+				System.out.println("Not a prime Number");
+				var=1;
+				break;
+			}
+		}
+			
+			if(var==0)
+			{
+				System.out.println("It's a prime number");
 			}
 		}
 		
+					
 	}
 
-}
+
