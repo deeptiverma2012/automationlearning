@@ -17,7 +17,7 @@ public class ReadRowWiseText {
 		BufferedReader br = new BufferedReader(fr);
 		
 		String S = "";
-		for(int i=0; i<5; ++i)
+		for(int i=0; i<5; i++)
 		{	
 			if(i==Num)
 			{
@@ -26,8 +26,7 @@ public class ReadRowWiseText {
 			else
 			{
 				br.readLine();
-			}	
-					
+			}					
 		}
 		  System.out.println(S);				
 	}
